@@ -1,0 +1,17 @@
+name: Exercice 1
+
+on:
+  push:
+  pull_request:
+    branches:
+      -main
+  workflow_dispatch:
+ 
+
+
+jobs:
+  job_ex1:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo "Je teste l'exercice 1"
