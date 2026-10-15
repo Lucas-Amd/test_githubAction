@@ -23,4 +23,4 @@ jobs:
     needs: test
     runs-on: ubuntu-latest
     steps:
-      - run: ./uploadRelease.sh
+      - run: echo "Exécution du test sur l'OS ${{ matrix.os }} avec le navigateur ${{ matrix.browser }}"
