@@ -30,7 +30,7 @@ on:
 
 
 jobs:
-  job_ex1:
+  job_ex2:
     runs-on: ubuntu-latest
 
     steps:
