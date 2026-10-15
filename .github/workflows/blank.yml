@@ -1,11 +1,31 @@
-name: Exercice 1
+# name: Exercice 1
+
+# on:
+#   push:
+#   pull_request:
+#     branches:
+#       -main
+#   workflow_dispatch:
+ 
+
+
+# jobs:
+#   job_ex1:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - run: echo "Je teste l'exercice 1"
+
+
+
+
+name: Exercice 2
 
 on:
-  push:
   pull_request:
-    branches:
-      -main
-  workflow_dispatch:
+    paths:
+      - '**/*.yml'
+      - '!**/test/**/*.yml'
  
 
 
@@ -14,4 +34,4 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: echo "Je teste l'exercice 1"
+      - run: echo "Je vérifie les fichiers yaml"
