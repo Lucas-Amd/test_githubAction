@@ -19,19 +19,36 @@
 # --------------------------------------------------------------------------------------------
 
 
-name: Exercice 2
+# name: Exercice 2
 
-on:
-  pull_request:
-    paths:
-      - '**/*.yml'
-      - '!**/test/**/*.yml'
+# on:
+#  pull_request:
+#    paths:
+#      - '**/*.yml'
+#      - '!**/test/**/*.yml'
  
 
 
-jobs:
-  job_ex2:
-    runs-on: ubuntu-latest
+#jobs:
+#  job_ex2:
+#    runs-on: ubuntu-latest
 
+#    steps:
+#      - run: echo "Je vérifie les fichiers yaml"
+
+
+
+
+# --------------------------------------------------------------------------------------------
+
+
+
+name: Exercice 3
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+jobs:
+  job_ex3:
+    runs-on: ubuntu-latest
     steps:
-      - run: echo "Je vérifie les fichiers yaml"
+      - run: echo "Je m'exécute toutes les 5 minutes"
